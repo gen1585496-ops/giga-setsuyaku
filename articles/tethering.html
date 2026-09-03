@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>テザリングの通信量を抑える｜ギガ節約ラボ</title>
+<meta name="description" content="テザリングでPCを繋ぐと通信量が一気に増える理由と、その対策。従量制課金接続の設定、更新の抑制、ブラウザ側の工夫を説明します。">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <a class="brand" href="../">ギガ節約ラボ</a>
+    <nav class="site">
+      <a href="../">ホーム</a>
+      <a href="why-data-runs-out.html">通信量の内訳</a>
+      <a href="reduce-on-android.html">Androidの設定</a>
+      <a href="choose-plan.html">プランの選び方</a>
+      <a href="../app.html">アプリ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>テザリングの通信量を抑える</h1>
+  <p class="updated">最終更新: 2026-09-03</p>
+
+  <p>
+    出先でPCをスマホに繋いだら、1時間で数GB消えていた。
+    テザリングでよくある事故です。原因ははっきりしていて、対策も決まっています。
+  </p>
+
+  <h2>なぜ一気に減るのか</h2>
+
+  <p>
+    PCやタブレットは、<strong>その回線を「無制限のWi-Fi」だと思って振る舞います</strong>。
+    スマホのアプリは通信量を気にする作りになっていますが、PC側にはその前提がありません。
+  </p>
+
+  <p>とくに大きいのは次の3つです。</p>
+
+  <ul>
+    <li><strong>OSの更新</strong> — 数GB単位。繋いだ瞬間に始まることがある</li>
+    <li><strong>クラウドの同期</strong> — 溜まっていたファイルを一気に上げ下げする</li>
+    <li><strong>動画の自動再生</strong> — PC向けサイトは高解像度の動画を配信する</li>
+  </ul>
+
+  <h2>対策1：接続を「従量制課金接続」に設定する</h2>
+
+  <p>
+    これが最も効きます。Windowsにも他のOSにも、
+    「この接続は従量制です」とOSに伝える設定があります。
+  </p>
+
+  <p>
+    Windowsの場合、<strong>設定 → ネットワークとインターネット → Wi-Fi →
+    接続中のネットワーク → 従量制課金接続</strong> をオンにします。
+  </p>
+
+  <p>これを入れると、OSが自動的に次の動作を抑えます。</p>
+
+  <ul>
+    <li>Windows Updateの自動ダウンロード（重要な更新を除く）</li>
+    <li>ストアアプリの自動更新</li>
+    <li>一部の同期処理</li>
+  </ul>
+
+  <p>
+    <strong>テザリングを使う前に、一度だけ設定しておけば以後は自動で効きます。</strong>
+    費用対効果が最も高い項目です。
+  </p>
+
+  <h2>対策2：クラウド同期を一時停止する</h2>
+
+  <p>
+    OneDrive、Google Drive、Dropboxなどの同期アプリは、
+    タスクトレイから一時停止できます。
+    「2時間停止」のような選択肢があるので、テザリング中はそれで止めておきます。
+  </p>
+
+  <p>
+    従量制課金接続の設定だけでは、これらのサードパーティ製アプリまでは止まりません。
+    別途止める必要があります。
+  </p>
+
+  <h2>対策3：ブラウザ側で読み込むものを減らす</h2>
+
+  <p>
+    PC向けのWebページは、スマホ向けより重いことがほとんどです。
+    画像の解像度が高く、埋め込み動画も多くなります。
+  </p>
+
+  <p>
+    テザリング中に調べ物をするだけなら、
+    画像を止めてしまっても困らない場面が多いはずです。
+    詳しくは<a href="browser-settings.html">ブラウザ設定だけで通信量はどこまで減るか</a>にまとめています。
+  </p>
+
+  <h2>対策4：親機側でも節約する</h2>
+
+  <p>
+    見落としがちですが、テザリング中もスマホ本体は通信しています。
+    子機に帯域を回したいなら、親機側のバックグラウンド通信も止めておくと確実です。
+  </p>
+
+  <p>
+    Androidのデータセーバーを有効にしておけば、この点はカバーできます。
+  </p>
+
+  <h2>使う前のチェックリスト</h2>
+
+  <div class="table-wrap">
+  <table>
+    <tr><th>項目</th><th>確認</th></tr>
+    <tr><td>従量制課金接続</td><td>PC側でオンにしてあるか</td></tr>
+    <tr><td>クラウド同期</td><td>一時停止したか</td></tr>
+    <tr><td>OSの更新</td><td>保留になっている更新がないか</td></tr>
+    <tr><td>ブラウザ</td><td>不要な読み込みを止めているか</td></tr>
+    <tr><td>親機</td><td>データセーバーが有効か</td></tr>
+  </table>
+  </div>
+
+  <h2>それでも足りないなら</h2>
+
+  <p>
+    テザリングを常用するなら、そもそもの容量設計を見直したほうが確実です。
+    プランによってはテザリングに個別の上限が設けられている場合もあります。
+    契約内容を一度確認してください。
+    観点は<a href="choose-plan.html">料金プランの選び方チェックリスト</a>にまとめています。
+  </p>
+</main>
+
+<footer class="site">
+  <div class="inner">
+    <p>
+      <a href="../about.html">運営者情報・お問い合わせ</a> ／
+      <a href="../disclosure.html">広告について</a>
+    </p>
+    <p>© Two Kids Lab</p>
+  </div>
+</footer>
+</body>
+</html>
