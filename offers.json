@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "items": [
+    {
+      "id": "plan01",
+      "title": "料金プランの選び方チェックリスト",
+      "url": "https://gen1585496-ops.github.io/giga-setsuyaku/articles/choose-plan.html",
+      "prLabel": "PR"
+    }
+  ]
+}
